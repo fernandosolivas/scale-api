@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: see directory
-        uses: actions/checkout@v1
         run: ls -R
         working_directory: ../
       - name: sam build
