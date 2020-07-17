@@ -5,10 +5,6 @@ const SERVICE_NAME = process.env.SERVICE_NAME;
 const DESIRED_COUNT = process.env.DESIRED_COUNT;
 
 exports.addContainer = async (event) => {
-    if (event.httpMethod !== 'POST') {
-        throw new Error(`postMethod only accepts POST method, you tried: ${event.httpMethod} method.`);
-    }
-
     const response = {
         statusCode: 200
     }
