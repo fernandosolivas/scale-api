@@ -8,8 +8,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: see directory
+        uses: actions/checkout@v1
         run: ls -R
+        working_directory: ../
       - name: sam build
         uses: TractorZoom/sam-cli-action@master
         with:
