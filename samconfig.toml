@@ -1,0 +1,9 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "scale-api"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-16io2jr2g0gus"
+s3_prefix = "scale-api"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
